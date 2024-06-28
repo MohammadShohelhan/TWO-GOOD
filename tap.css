@@ -1,0 +1,82 @@
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  
+     
+ 
+ 
+
+
+
+
+   .card{
+    height: 110vh;
+  }  
+    
+  .third-main-top-heading{
+     
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -3px;
+    color: rgb(3, 2, 2); 
+    padding-bottom: 3rem;
+  } 
+
+
+
+  .five-main-page h2{
+   width: 25rem;
+   margin: 0 auto;
+   font-size: 1.8rem;
+   
+
+  }
+
+  .support-div{
+    text-align:left;
+  }
+ 
+
+
+   
+
+
+
+
+
+
+  
+  .three-div-container{ 
+    width: 100%;
+    min-height: 90vh;
+    gap: .4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+  
+
+  
+    /* padding: 0rem; */
+  
+  
+  }
+  .three-div-container img{
+    width: 48%;
+   
+    display: inline-block;
+    margin: 0 auto;
+  
+  } 
+  
+  .same-div1{
+   width: 100rem;
+   height: 75vh;
+  
+    padding-left: 2rem;
+  } 
+    
+   
+    
+    
+    
+    }

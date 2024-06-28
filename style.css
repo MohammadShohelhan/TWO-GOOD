@@ -1,67 +1,782 @@
-@media (max-width:600px) {
- 
-    .manu-items{
-        display: none; 
-        }
-        .manu-icons{
-            right: -33%;
-             font-size: 1.5rem;
-           background-color: rgb(236, 241, 245);
-           padding: 10px 40px;
-           border-radius: 25px;
-        }
-           
-        .main-text{
-       margin: 7rem auto 1rem;
-    }
 
-           
-  .bannerimg img{
-    height: 30vh;
-    margin: auto;
-    width: 100%;
-    
-  }
-  .second-page{
- margin-top: -7vh;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif ;   
+}
+
+
+*::selection{
+    background-color: black;
+    color:white;
+} 
+
+
+.hello{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  inset: 0;
+  position: relative;
+  top: -10rem;
+}
+
+         
+html,body{
+   width: 100%;
+   height: 100%;
+    overflow-x: hidden; 
+  
  }
-    .heading-text p{ 
-      width:11rem;
-      line-height: 1.7;
-    }
 
-    .good-div{
-     width: 90%;
-    }
-       .three-card{
-      flex-direction: column;
-      gap:  1rem;
-      padding: 0rem;
+                            /* boiler plate end*/
+  header{
+     width: 100%;
     
-     }
+ } 
 
-     .card-1{
-        height:75vh;
-        width: 100%;
-        padding:0;
-        margin: 0;
-   }
 
-       .three-card .middle-div{
-   
+.nav-container{
+  width:100%;
+  padding:1rem;
+ 
   display: flex;
-  justify-content: center;
-  align-items: center;
-     }
-
-
-
-
-
-
-
-
-
+  justify-content: space-between;
+ 
 
 
 }
+
+#logo{
+ display: flex;
+ flex-direction: column;
+ line-height: .8;
+ font-size: 2rem;
+ text-align: center;
+ 
+}
+
+  .nav-manu-items{
+    width: 30rem;
+    display: none;
+  
+ 
+
+  }
+
+  .nav-manu-items ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: -1rem;
+    margin-right: 2rem;
+   
+   
+  }
+
+  .nav-manu-items ul li{
+    list-style: none;
+
+  }
+
+
+
+
+
+
+
+
+
+  .nav-manu-items ul li a{
+   
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color:rgb(168, 166, 166);
+  
+  }
+
+
+  .nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.4rem;
+    
+  
+   }
+
+   .nav-icons a{
+    text-decoration: none;
+    color:black;
+  }
+
+
+
+  
+
+  
+
+     /* -----main text css-------- */
+
+
+  .main-text{
+    width: 100%;
+    margin: 8rem auto 1rem;
+    padding: .5rem;
+  }
+  
+  .text-container{
+    width: 100%;
+   
+      
+  }
+   
+    .text-container h1{
+      text-transform: uppercase;
+      font-size: 16vw;
+      font-weight: bolder;
+      letter-spacing :-1.5vw;
+      line-height:.8;
+  }
+
+  .text-container .main-text-img{
+  
+          width:100%;
+          padding: 1rem 0rem  
+}
+
+
+
+                     /*    second page css styling start here */
+
+  .second-page{
+    width: 100%;
+    padding: 3rem 0rem;
+  
+  }
+   
+ .heading-text{
+  width: 100%;
+  text-align: center;    
+}
+    
+     .sec-main-text{
+    
+      font-size:3rem;
+      /* font-weight: bolder; */
+      letter-spacing: -4;
+      word-spacing: -1vw;
+  
+    
+    }
+    
+    .heading-text .para{ 
+      font-size: .7rem;
+      text-align: center;
+      width:fit-content;
+      margin: 3rem auto ;
+      padding-bottom:.41rem;
+      position: relative;
+      border-bottom: 1px solid rgb(5, 4, 4);
+    }
+    
+    
+    .heading-text p::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width:0%;
+      height: 1px;
+      background-color: rgba(12, 6, 6, 0.568);
+       transition: 1s;
+    
+    }
+    
+    .heading-text p:hover::after{
+      width: 100%;
+      border:none;
+     
+    }
+
+
+
+    /* --------------------------- */
+    /* -------------------------- */
+    
+     .good-div{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid rgba(12, 11, 11, 0.425);
+      margin: auto;
+     }
+    
+    .good-div p{
+      padding-bottom: .4rem;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+   
+
+        /* --------------------------- */
+    /* -------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      .three-card{
+        width: 100%;
+        padding: .5rem;
+     
+       }
+
+       .three-card-container{
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+       }
+
+          .card{
+          width: 100%;
+          height: 70vh;
+        }
+
+       
+    
+   
+      .card-1{
+         background-image: url("https://cdn.sanity.io/images/w8f1ak3c/production/9032e317a6741221ae543fdae5d05160819f9a44-1500x2250.jpg/DSC0079_Dexter%20Kim.jpg?rect=0,0,1500,2008&fp-x=0.47794117647058826&fp-y=0.4461323529411765&w=640&h=1067&fit=crop&crop=focalpoint&auto=format"); 
+        background-size: cover;
+        background-position: center;
+         position: relative;
+        color:white;
+        width: 100%;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+       
+       
+     }
+
+      .card-2{
+      background-image: url("https://cdn.sanity.io/images/w8f1ak3c/production/138e191deead80c5c8e9a982c20987f8f83c1f27-5504x8256.jpg/JTG_2919%20copy.jpg?rect=276,0,4952,8256&w=640&h=1067&fit=min&auto=format");
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      color:white;
+      width: 100%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+  
+   .card-3{
+    background-image: url("https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    width: 100%;
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } 
+
+    
+     .middle-div{
+
+        display: flex;
+        gap: 3rem;
+        background-color: rgb(247, 243, 238);
+        padding:1rem 1.5rem;
+        border-radius:   25px;
+       text-transform: uppercase;
+     }
+     
+      .middle-div a{
+        text-decoration: none;
+      }
+      .middle-div::after{
+        content: '';
+        width: 100%;
+        height: 20rem;
+        position: absolute;
+      }
+    
+    
+      .middle-div:hover{
+       background-color: black;
+     } 
+
+
+
+
+     /* 5555555555555555555555555555555555555555555555555 */
+
+     .third-main{
+      width: 100%;
+      margin-top: 5rem;  
+    }
+
+    .third-main-top{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+     
+    
+    }
+
+    .third-main-top-heading{
+     
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+      color: rgb(3, 2, 2); 
+      padding-bottom: 3rem;
+    }
+
+ 
+
+  
+
+
+   .image{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 17rem;
+    margin-top: 4rem;
+    padding-bottom: 0rem;
+}
+.images-div2 {
+  width: 100%;
+  text-align: center;
+  /* background-color: blue; */
+  margin: 1rem;
+}
+
+   .images-div2 img {
+    
+    width: 35vw;
+    margin: auto;
+}
+.rate-1div h3{
+  width: 35vw;
+  text-align: left;
+  font-size: .7rem;
+  color: rgba(0, 0, 0, 0.623);
+ line-height: 1.7;
+  margin: 0 auto;
+}
+
+
+.rate-1div{
+  margin-top: 1rem;
+ 
+}
+
+.world{
+  margin-top: 2rem;
+}
+
+
+
+
+/* 5555555555555555555555555555555555555555555555 */
+/* 5555555555555555555555555555555555555555555555 */
+/* 5555555555555555555555555555555555555555555555 */
+
+
+     .five-main-page{     
+        width: 100%;
+        margin-top: 10rem;
+        align-items: center;
+        text-align: center;
+  
+      }
+      
+      .five-main-page h2{
+        
+         width: 13rem;
+       
+         text-align: center;
+       
+         margin: auto;
+         font-size: 1.4rem;
+         font-weight:12px;
+         line-height: 1;
+         text-transform: uppercase;
+         padding-bottom: 4rem;
+      }
+      
+      
+      .messagebtn{
+        width: 20rem;
+        height: 3.2rem;
+      margin: 3rem 0rem;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        color: rgb(234, 235, 236);
+        font-weight: bolder;
+        font-size: .7rem;
+        background-color: black;
+      
+      }
+      
+      .five-main-page p{
+        width: 18rem;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+        font-size:.9rem;
+        text-transform: uppercase;
+        font-weight: 800;
+       color: rgba(90, 87, 87, 0.836);
+        
+      }
+        
+      
+      
+      /* three div are here two are pictue and one text div */
+      
+      
+     
+      .three-div-container{ 
+        width: 100%;
+        min-height: 90vh;
+        gap: .4rem;
+        display: flex;
+        flex-wrap: wrap;
+    
+      
+    
+      
+        /* padding: 0rem; */
+      
+      
+      }
+      .three-div-container img{
+        width: 48%;
+       
+        display: inline-block;
+        margin: 0 auto;
+      
+      } 
+      
+      .same-div1{
+       width: 100rem;
+       height: 75vh;
+      
+        padding-left: 2rem;
+      } 
+
+
+
+
+  
+
+  .same-div1 h2{
+    text-transform: uppercase;
+     margin: 2rem 0rem;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: -5px;
+  
+  }
+  
+  .same-div1 p{
+  
+    font-size:.9rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.76);
+    line-height: 1.5;
+    margin-bottom:2.5rem;
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }  
+
+
+
+
+    /* three div are here two are pictue and one text div */
+
+
+      /* three div are here two are pictue and one text div */
+
+  .support-div{
+    text-align: center;
+    width: fit-content;
+    font-size: .7rem;
+    margin: 0 auto;
+    padding-bottom: 0.5rem; 
+   border-bottom: 1px solid black;
+ 
+    
+   }
+ 
+   .support-div p{ 
+     font-size:.9rem;
+     font-weight: 900;
+     color: rgba(0, 0, 0, 0.651);
+     line-height: 1;
+     margin-bottom:3rem;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+  .support-div{
+    text-align: center;
+    width: fit-content;
+    font-size: .7rem;
+    margin: 0 auto;
+    padding-bottom: 0.5rem; 
+   border-bottom: 1px solid black;
+ 
+    
+   }
+ 
+      
+      
+      
+      
+      
+  
+      
+   
+      
+      
+      
+      
+      /* 
+      <!-- ------------------------------- anonet good div but it is a input  */
+      .good-div{
+        margin-top: 6rem;
+      }
+      
+        .good-div input{
+          width: 100%;
+          height: 3.5rem;
+          cursor: pointer;
+          outline: none;
+          border: none;
+      
+        }
+      
+      
+        .good-div input::placeholder{
+          width: 95%;
+          font-size: 6vw;
+          font-weight: 900;
+          color: black;
+          align-items: center;
+          text-align: center;
+         
+          color: rgb(12, 15, 15);
+          position: absolute;
+          left:0;
+          top: 0%;
+        
+        }
+
+        .good-div i{
+         /* padding-top: .4rem; */
+         font-size: 1.7rem;
+        }
+      
+        /* last page styling here  */
+      
+        .last-page{
+          position: relative;
+          width: 100%;
+     
+        }
+      
+        .last-wrapper{
+        
+     
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 40vh;
+          margin-top: 3rem;
+        }   
+        
+        .last-wrapper div {
+               padding: 1rem;
+        }
+      
+      
+        .last-wrapper1  h5{
+          margin-left:1rem ;
+          padding-bottom: 1rem;
+         color: rgba(0, 0, 0, 0.418);
+        }
+      
+        .three{
+          text-align: left;     
+        }
+      
+        .last-wrapper1 div{ 
+          font-size: 14px;
+          font-weight: 800;
+          color: rgba(0, 0, 0, 0.671);
+          line-height: 1.5;
+        }
+      
+      
+      
+      
+      /* middle div in last section or footer sec tion */
+      
+      .last-wrapper2{
+        width:30rem;
+        /* background-color: brown; */
+         margin: auto;
+         text-align: center;
+          
+      }
+      
+      
+      .last-wrapper2 p{
+       margin-top: 2rem;
+       font-size: 12px;
+       font-weight: 800;
+       color: rgba(0, 0, 0, 0.479); 
+       letter-spacing: -1px; 
+       word-spacing:0.5px;
+       margin: 1rem;   
+      }
+      
+      
+      .last-wrapper2 img{
+      
+         padding-right: 3rem;
+      }
+      
+      
+      .last-wrapper2 p{
+       margin-top: 2rem;
+       font-size: 12px;
+       font-weight: 800;
+       color: rgba(0, 0, 0, 0.479); 
+       letter-spacing: -1px; 
+       word-spacing:0.5px;
+         
+      }
+
+      .policysection{
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      
+      /* middle div in last section or footer sec tion */
+           .footer-div{
+            width: 100%;
+            
+            
+           }
+        .footer-div p{
+            width: 67vw;
+            margin: 4rem auto;
+         
+          
+          text-align: center;
+          font-size: 0.9rem;
+          font-weight: 500;
+          opacity: .8;
+          line-height: 1.8;
+          text-align: center; 
+         
+        
+        }
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .third-main{
+        width: 100%;
+        min-height: 100vh;
+      
+        
+       
+      }
+      .wrapper3{
+       
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5rem;
+      }
+  
+      .third-main h1{
+         width:35rem;
+         font-size: 2.5rem;
+         font-weight: 900;
+         line-height: 1;
+     
+      margin-left:-2rem
+        
+      
+      }
+  
+    
+  
+
+  
+    
+  
+  
+ 
